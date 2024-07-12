@@ -62,6 +62,8 @@ button:hover::after {
 .main {
   margin: auto;
   width: 90%;
+  height: 70vh;
+  align-content: center;
 }
 h1 {
   font-size: 4rem;
@@ -73,7 +75,8 @@ h1 {
   border-radius: 0.5rem;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.308);
   cursor: pointer;
-  animation: gorsel 5s infinite ease-in-out;
+  animation: gorsel 5s linear ease-in-out;
+  transition: all 5s;
 }
 .main img:hover {
   z-index: 1;
@@ -90,4 +93,21 @@ h1 {
   100% {
     transform: scale(160%);
   }
+}
+/* FOOTER */
+
+.footer {
+  float: right;
+  margin: 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  gap: 2rem;
+}
+i {
+  transition: all 2s;
+}
+i:hover{
+  transform:rotate(360deg);
+  color: rgb(129, 42, 16);
 }
