@@ -18,17 +18,16 @@ body {
   align-items: center;
   margin: 2.5rem;
 }
-.navbar img{
-    cursor: pointer;
-    transition: all 2s;
+.navbar img {
+  cursor: pointer;
+  transition: all 2s;
 }
-.navbar img:hover{
-    transform: rotate(360deg) scale(150%);
-    
+.navbar img:hover {
+  transform: rotate(360deg) scale(150%);
 }
 .buttons {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 .buttons button {
   background-color: white;
@@ -49,14 +48,46 @@ button::after {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: crimson;
+  background-color: darkred;
   transition: width 1s ease-in-out;
 }
 button:hover {
-  color: crimson;
+  color: darkred;
 }
 button:hover::after {
   width: 100%;
 }
 
 /* MAİN */
+.main {
+  margin: auto;
+  width: 90%;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: darkred;
+}
+.main img {
+  width: 250px;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.308);
+  cursor: pointer;
+  animation: gorsel 5s infinite ease-in-out;
+}
+.main img:hover {
+  z-index: 1;
+  transform: scale(160%);
+}
+.images-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@keyframes gorsel {
+  100% {
+    transform: scale(160%);
+  }
+}
